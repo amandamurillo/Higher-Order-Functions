@@ -1,0 +1,28 @@
+// Write Map as a function
+
+function map(arr, callback) {
+  let newArr = [];
+  arr.forEach(function(element, index) {
+    newArr.push(callback(element, index));
+  });
+  return newArr;
+}
+
+//Write Map as a function that can take an array or object as a parameter
+
+function map(coll, callback) {
+  let newArr = [];
+  let newObj = {};
+
+  if(Array.isArray(coll)) {
+    coll.forEach(function(element, index){
+      newArr.push(callback(element, index));
+    });
+    return newArr;
+  } else {
+    for(let key in coll) {
+      newObj[key] = callback(coll[key]);
+    }
+    return newObj;
+  }
+}
