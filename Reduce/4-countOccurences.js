@@ -16,3 +16,15 @@ function countOccurences(str, char) {
   return count;
 }
 
+
+function countOccurences(str, char) {
+  let count = str.split('').reduce(function(n, val) {
+    return n + (val === char);
+}, 0);
+
+return count;
+}
+
+
+
+
