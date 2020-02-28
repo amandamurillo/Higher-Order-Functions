@@ -17,4 +17,13 @@ function reduce(arr, callback, start) {
 //   return acc;
 // }
 
+// reduce with no accumulator:
+
+// if (acc === undefined) {
+//   acc = arr[0];
+//   arr = arr.slice(1);
+// }
+
+
+
 
