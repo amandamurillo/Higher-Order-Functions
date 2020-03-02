@@ -1,4 +1,4 @@
-// Write Map as a function
+// Write map as a function
 
 function map(arr, callback) {
   let newArr = [];
@@ -8,7 +8,7 @@ function map(arr, callback) {
   return newArr;
 }
 
-//Write Map as a function that can take an array or object as a parameter
+//Write a version of map that can take an array or object as a parameter
 
 function map(coll, callback) {
   let newArr = [];
